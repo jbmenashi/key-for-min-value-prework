@@ -7,11 +7,11 @@ def key_for_min_value(name_hash)
   else
     min_value = nil
     min_name = nil
-    name_hash.each do |item, cost|
-    return item
-  end
-    
-    
-    
+    name_hash.each do |name, value|
+      if min_value == nil || min_value > value
+        min_value = value
+        min_name = name
+      end
+    min_name
   end
 end
