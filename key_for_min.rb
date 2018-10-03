@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     return nil 
   else
   name_hash.collect do |item, cost|
-    item
+    return item
   end
     
     
